@@ -16,7 +16,7 @@ A clean and organized reference covering major programming paradigms and essenti
 8. [What are the various types of inheritance?](#types-inheritance)
 9. [What is meant by static polymorphism?](#static-polymorphism)
 10. [Who developed the first object-oriented programming language?](#who-developed-oop)
-11. [Which among the following does not show Polymorphism?](#not-polymorphism)
+11. [Which among the following does NOT show Polymorphism?](#not-polymorphism)
 12. [Which functions represent the concept of Polymorphism?](#functions-polymorphism)
 13. [Which feature of OOPs facilitates code reusability?](#code-reusability)
 14. [Which language supports classes but not polymorphism?](#language-no-polymorphism)
@@ -45,9 +45,9 @@ There are mainly two types:
 HOW to execute the program logic.
 
 Includes:
-- Procedural Programming
-- Object-Oriented Programming
-- Parallel Programming
+- Procedural Programming  
+- Object-Oriented Programming  
+- Parallel Programming  
 
 ### Declarative Programming Paradigm
 WHAT to execute, not HOW.
@@ -56,6 +56,7 @@ Includes:
 - Logical programming  
 - Functional programming  
 - Database programming  
+
 </details>
 
 ---
@@ -64,7 +65,7 @@ Includes:
 ## 2. How much memory does a class occupy?
 <details><summary>Click to expand</summary>
 
-Classes do not consume memory.  
+Classes do not consume memory — they are templates.  
 Objects created from the class consume memory.
 
 </details>
@@ -76,18 +77,18 @@ Objects created from the class consume memory.
 <details><summary>Click to expand</summary>
 
 System.out.print() is used for debugging.  
-System class is `final`, so it cannot be subclassed.
+System class is `final`, so it cannot be subclassed or overridden.
 
 </details>
 
 ---
 
-<a id="constructor-vs-method "></a>
+<a id="constructor-vs-method"></a>
 ## 4. What Is The Difference Between A Constructor And A Method In Java?
 <details><summary>Click to expand</summary>
 
-- Constructor initializes an object.  
-- Method is reusable logic that can be called multiple times.
+- A **constructor** initializes an object.  
+- A **method** contains reusable logic that can be called any time.
 
 </details>
 
@@ -97,7 +98,7 @@ System class is `final`, so it cannot be subclassed.
 ## 5. What Is A Lambda Expression In Java?
 <details><summary>Click to expand</summary>
 
-A lambda expression represents block of code that can be passed like an object.  
+A lambda expression represents a short block of code that can be passed around like an object.  
 Used to implement functional interfaces.
 
 </details>
@@ -108,7 +109,7 @@ Used to implement functional interfaces.
 ## 6. Which Class Is A Superclass Of All Classes?
 <details><summary>Click to expand</summary>
 
-`java.lang.Object` is the root of all classes.
+`java.lang.Object`
 
 </details>
 
@@ -118,9 +119,9 @@ Used to implement functional interfaces.
 ## 7. Are there any limitations of Inheritance?
 <details><summary>Click to expand</summary>
 
-- Time-consuming (deep navigation)  
-- Tightly coupled classes  
-- Complex to implement  
+- Takes more time due to deep class navigation  
+- Tight coupling between parent & child  
+- Complex implementation  
 - Can cause unexpected errors  
 
 </details>
@@ -141,19 +142,14 @@ Used to implement functional interfaces.
 
 ---
 
-# 🆕 NEW CONTENT BELOW (ADDED EXACTLY AS YOU GAVE)
-
----
-
 <a id="static-polymorphism"></a>
 ## 9. What is meant by static polymorphism?
 <details><summary>Click to expand</summary>
 
-Static Polymorphism is compile-time polymorphism.  
-It binds a function/operator based on values at compile time.  
-Achieved through:
-- Method overloading  
-- Operator overloading  
+Static Polymorphism = Compile-time polymorphism.  
+Achieved by:
+- Method Overloading  
+- Operator Overloading  
 
 </details>
 
@@ -187,7 +183,7 @@ Achieved through:
 <details><summary>Click to expand</summary>
 
 - Class member function  
-- Virtual function ✔  
+- **Virtual function** ✔  
 - Inline function  
 - Undefined function  
 
@@ -199,7 +195,7 @@ Achieved through:
 ## 13. Which feature of OOPs facilitates code reusability?
 <details><summary>Click to expand</summary>
 
-✔ **Inheritance**
+**Inheritance**
 
 </details>
 
@@ -216,10 +212,10 @@ Achieved through:
 ---
 
 <a id="binding-feature"></a>
-## 15. Which OOP feature is responsible for binding data with implementation?
+## 15. Which OOP feature binds data with implementation?
 <details><summary>Click to expand</summary>
 
-✔ **Encapsulation**
+**Encapsulation**
 
 </details>
 
@@ -253,3 +249,85 @@ Achieved through:
 ```java
 public int calculateSum(int a, int b) { return a + b; }
 public int calculateSum(int a, int b, int c) { return a + b + c; }
+```
+
+---
+
+### ✔ 2. Adapting Parameter Order  
+```java
+public double calculateArea(double length, double width) { 
+    return length * width; 
+}
+
+public double calculateArea(double radius) { 
+    return Math.PI * radius * radius; 
+}
+```
+
+---
+
+### ✔ 3. Varying Parameter Type  
+```java
+public void printDetails(String name, int age) {
+    System.out.println("Name: " + name + " , Age: " + age);
+}
+
+public void printDetails(int id) {
+    System.out.println("ID: " + id);
+}
+
+public void printDetails(double salary) {
+    System.out.println("Salary: " + salary);
+}
+```
+
+</details>
+
+---
+
+<a id="cohesion"></a>
+## 19. What is cohesion in OOP?
+<details><summary>Click to expand</summary>
+
+Cohesion refers to how closely methods & data inside a class are related.  
+High cohesion → class focuses on one responsibility  
+Low cohesion → messy, hard to maintain class  
+
+</details>
+
+---
+
+<a id="inheritance-mixin-composition"></a>
+## 20. Compare inheritance vs mixin vs composition.
+<details><summary>Click to expand</summary>
+
+### Inheritance  
+- *is-a*  
+- Reuses code  
+- Can create deep hierarchies  
+
+### Mixin  
+- Adds reusable behaviours across classes  
+- Avoids deep inheritance  
+- Possible name conflicts  
+
+### Composition  
+- *has-a*  
+- Most flexible  
+- Encourages modular design  
+
+</details>
+
+---
+
+<a id="limitations-oops"></a>
+## 21. What are the limitations of OOPs?
+<details><summary>Click to expand</summary>
+
+- Not suitable for small problems  
+- Harder to understand without documentation  
+- Requires more time  
+- Requires more testing  
+- Must think in terms of objects  
+
+</details>
