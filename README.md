@@ -1,86 +1,109 @@
 # OOPS
 
-# Programming Paradigms & Java Interview Concepts
+# 📘 Programming Paradigms & Java Interview Concepts
 
-## What Are Some Other Programming Paradigms Other Than OOPs?
+A clean and organized reference covering major programming paradigms and essential Java concepts commonly asked in interviews.
 
-Programming paradigms refer to the method of classification of programming languages based on their features. There are mainly two types of Programming Paradigms:
+---
 
-### 1. Imperative Programming Paradigm  
+## 📑 Table of Contents
+
+1. [Programming Paradigms](#programming-paradigms)
+   - Imperative Programming Paradigm  
+   - Declarative Programming Paradigm  
+2. [How Much Memory Does a Class Occupy?](#how-much-memory-does-a-class-occupy)
+3. [Use of System Class in Java](#what-is-the-use-of-system-class-in-java)
+4. [Constructor vs Method](#what-is-the-difference-between-a-constructor-and-a-method-in-java)
+5. [Lambda Expression in Java](#what-is-a-lambda-expression-in-java)
+6. [Superclass of All Classes](#which-class-is-a-superclass-of-all-classes)
+7. [Limitations of Inheritance](#are-there-any-limitations-of-inheritance)
+8. [Types of Inheritance](#what-are-the-various-types-of-inheritance)
+
+---
+
+## 🧠 Programming Paradigms
+
+Programming paradigms refer to the method of classification of programming languages based on their features.  
+There are mainly two types of Programming Paradigms:
+
+---
+
+### 🔹 1. Imperative Programming Paradigm
+
 Imperative programming focuses on **HOW** to execute program logic and defines control flow as statements that change a program state. This can be further classified as:
 
-- **a) Procedural Programming Paradigm:**  
-  Procedural programming specifies the steps a program must take to reach the desired state, usually read in order from top to bottom.
+#### a) **Procedural Programming Paradigm**  
+Procedural programming specifies the steps a program must take to reach the desired state, usually read in order from top to bottom.
 
-- **b) Object-Oriented Programming (OOP):**  
-  Object-oriented programming (OOP) organizes programs as objects that contain some data and have some behavior.
+#### b) **Object-Oriented Programming (OOP)**  
+OOP organizes programs as objects that contain some data and have some behavior.
 
-- **c) Parallel Programming:**  
-  Parallel programming paradigm breaks a task into subtasks and focuses on executing them simultaneously at the same time.
+#### c) **Parallel Programming**  
+Parallel programming paradigm breaks a task into subtasks and focuses on executing them simultaneously at the same time.
 
 ---
 
-### 2. Declarative Programming Paradigm  
+### 🔹 2. Declarative Programming Paradigm
+
 Declarative programming focuses on **WHAT** to execute and defines program logic, but not a detailed control flow. Declarative paradigm can be further classified into:
 
-- **a) Logical Programming Paradigm:**  
-  Logical programming paradigm is based on formal logic, which refers to a set of sentences expressing facts and rules about how to solve a problem.
+#### a) **Logical Programming Paradigm**  
+Logical programming is based on formal logic, which refers to a set of sentences expressing facts and rules about how to solve a problem.
 
-- **b) Functional Programming Paradigm:**  
-  Functional programming is a programming paradigm where programs are constructed by applying and composing functions.
+#### b) **Functional Programming Paradigm**  
+Functional programming constructs programs by applying and composing functions.
 
-- **c) Database Programming Paradigm:**  
-  Database programming model is used to manage data and information structured as fields, records, and files.
+#### c) **Database Programming Paradigm**  
+Database programming model is used to manage data structured as fields, records, and files.
 
 ---
 
-## How Much Memory Does a Class Occupy?
+## 🧱 How Much Memory Does a Class Occupy?
 
 Classes do not consume any memory. They are just a blueprint based on which objects are created.  
 Now when objects are created, they actually initialize the class members and methods and therefore consume memory.
 
 ---
 
-## What Is The Use Of System Class In Java?
+## 🖥️ What Is The Use Of System Class In Java?
 
-Java System class is one of the core classes. One of the easiest ways to log information for debugging is using the `System.out.print()` method.  
+Java System class is one of the core classes. One of the easiest ways to log information for debugging is the `System.out.print()` method.  
 System class is **final**, so we can’t subclass and override its behavior through inheritance.
 
 ---
 
-## What Is The Difference Between A Constructor And A Method In Java?
+## 🔧 What Is The Difference Between A Constructor And A Method In Java?
 
-A constructor is a special method that is used to create and initialize an object of a class.  
-A method is a block of code that can be called multiple times within a class.
+- A **constructor** is a special method used to create and initialize an object of a class.  
+- A **method** is a block of code that can be called multiple times within a class.
 
 ---
 
-## What Is A Lambda Expression In Java?
+## ⚡ What Is A Lambda Expression In Java?
 
 A lambda expression in Java is a concise way to represent a block of code that can be passed around, like an object, and executed later.  
-It provides a way to create anonymous functions, which can be used to implement functional interfaces, often replacing anonymous classes.
+It provides a way to create anonymous functions used to implement functional interfaces, often replacing anonymous classes.
 
 ---
 
-## Which Class Is A Superclass Of All Classes?
+## 🌳 Which Class Is A Superclass Of All Classes?
 
-`java.lang.Object` is the root class for all Java classes and we don’t need to extend it explicitly.  
-Every other Java class falls back under the Object class. All non-primitive types including arrays inherit directly or indirectly from this class.
-
----
-
-## Are There Any Limitations of Inheritance?
-
-Yes, with more powers come more complications. Inheritance is a very powerful feature in OOPs, but it has some limitations too:
-
-- Inheritance needs more time to process, as it needs to navigate through multiple classes for implementation.
-- The involved classes (base and child) are **tightly coupled**.  
-  So if one needs to make some changes, they might need to update both classes.
-- Inheritance might be **complex to implement**, and if not done correctly, this might lead to unexpected errors or incorrect outputs.
+`java.lang.Object` is the root class for all Java classes.  
+Every other Java class directly or indirectly inherits from it, including non-primitive types and arrays.
 
 ---
 
-## What Are the Various Types of Inheritance?
+## ⚠️ Are There Any Limitations of Inheritance?
+
+Yes — inheritance is powerful but comes with limitations:
+
+- Takes more time to process since it navigates multiple classes.
+- Classes become **tightly coupled**, making modifications require nested updates.
+- Complex to implement; incorrect usage may lead to unexpected errors or wrong outputs.
+
+---
+
+## 🧬 What Are the Various Types of Inheritance?
 
 The various types of inheritance include:
 
@@ -89,6 +112,14 @@ The various types of inheritance include:
 - Multi-level inheritance  
 - Hierarchical inheritance  
 - Hybrid inheritance  
+
+---
+
+## ⭐ Final Notes
+
+This collection is designed to be a clean, structured, interview-friendly reference for Java beginners and intermediate learners.  
+You may extend this README with examples, diagrams, or code implementations.
+
 
 
 
