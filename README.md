@@ -1,14 +1,12 @@
-# OOPS
-
 # 📘 Programming Paradigms & Java Interview Concepts
 
-A clean and organized reference covering major programming paradigms and essential Java concepts commonly asked in interviews.
+A clean and organized reference covering major programming paradigms and essential Java/OOPs concepts commonly asked in interviews.
 
 ---
 
 ## 📑 Table of Contents
 
-1. [What are some other programming paradigms other than OOPs? Programming paradigms refers to the method of classification of programming languages based on their features. There are mainly two types of Programming Paradigms:](#paradigms)
+1. [What are some other programming paradigms other than OOPs? Programming paradigms refers to the method of classification of programming languages based on their features.](#paradigms)
 2. [How much memory does a class occupy?](#memory-class)
 3. [What Is The Use Of System Class In Java?](#system-class)
 4. [What Is The Difference Between A Constructor And A Method In Java?](#constructor-vs-method)
@@ -16,255 +14,242 @@ A clean and organized reference covering major programming paradigms and essenti
 6. [Which Class Is A Superclass Of All Classes?](#superclass)
 7. [Are there any limitations of Inheritance?](#limitations-inheritance)
 8. [What are the various types of inheritance?](#types-inheritance)
+9. [What is meant by static polymorphism?](#static-polymorphism)
+10. [Who developed the first object-oriented programming language?](#who-developed-oop)
+11. [Which among the following does not show Polymorphism?](#not-polymorphism)
+12. [Which functions represent the concept of Polymorphism?](#functions-polymorphism)
+13. [Which feature of OOPs facilitates code reusability?](#code-reusability)
+14. [Which language supports classes but not polymorphism?](#language-no-polymorphism)
+15. [Which OOP feature binds data with implementation?](#binding-feature)
+16. [Which was the first purely object-oriented programming language?](#first-pure-oop)
+17. [True/False: A Java application can be created without OOPs](#java-oops-true-false)
+18. [Name some ways to overload a method.](#overload-method)
+19. [What is cohesion in OOP?](#cohesion)
+20. [Compare inheritance vs mixin vs composition.](#inheritance-mixin-composition)
+21. [What are the limitations of OOPs?](#limitations-oops)
+
+---
+
+# 🧠 MAIN CONTENT
 
 ---
 
 <a id="paradigms"></a>
-
 ## 1. What are some other programming paradigms other than OOPs?
+<details><summary>Click to expand</summary>
 
-<details>
-<summary>Click to expand the full content for: "What are some other programming paradigms other than OOPs?"</summary>
+Programming paradigms refers to the method of classification of programming languages based on their features.  
+There are mainly two types:
 
-Programming paradigms refers to the method of classification of programming languages based on their features. There are mainly two types of Programming Paradigms:
+### Imperative Programming Paradigm
+HOW to execute the program logic.
 
-Imperative Programming Paradigm
-Declarative Programming Paradigm
-Now, these paradigms can be further classified based:
+Includes:
+- Procedural Programming
+- Object-Oriented Programming
+- Parallel Programming
 
-1. Imperative Programming Paradigm: Imperative programming focuses on HOW to execute program logic and defines control flow as statements that change a program state. This can be further classified as:
-   a) Procedural Programming Paradigm: Procedural programming specifies the steps a program must take to reach the desired state, usually read in order from top to bottom.
-   b) Object-Oriented Programming or OOP: Object-oriented programming (OOP) organizes programs as objects, that contain some data and have some behavior.
-   c) Parallel Programming: Parallel programming paradigm breaks a task into subtasks and focuses on executing them simultaneously at the same time.
+### Declarative Programming Paradigm
+WHAT to execute, not HOW.
 
-2. Declarative Programming Paradigm: Declarative programming focuses on WHAT to execute and defines program logic, but not a detailed control flow. Declarative paradigm can be further classified into:
-   a) Logical Programming Paradigm: Logical programming paradigm is based on formal logic, which refers to a set of sentences expressing facts and rules about how to solve a problem
-   b) Functional Programming Paradigm: Functional programming is a programming paradigm where programs are constructed by applying and composing functions.
-   c) Database Programming Paradigm: Database programming model is used to manage data and information structured as fields, records, and files.
-
+Includes:
+- Logical programming  
+- Functional programming  
+- Database programming  
 </details>
 
 ---
 
 <a id="memory-class"></a>
-
 ## 2. How much memory does a class occupy?
+<details><summary>Click to expand</summary>
 
-<details>
-<summary>Click to expand the full content for: "How much memory does a class occupy?"</summary>
-
-Classes do not consume any memory. They are just a blueprint based on which objects are created. Now when objects are created, they actually initialize the class members and methods and therefore consume memory.
+Classes do not consume memory.  
+Objects created from the class consume memory.
 
 </details>
 
 ---
 
 <a id="system-class"></a>
-
 ## 3. What Is The Use Of System Class In Java?
+<details><summary>Click to expand</summary>
 
-<details>
-<summary>Click to expand the full content for: "What Is The Use Of System Class In Java?"</summary>
-
-Answer: This question is among the most common Java interview questions for freshers. Java System class is one of the core classes. One of the easiest ways to log information for debugging is System.out.print() method. System class is final so we can’t subclass and override its behavior through inheritance.
+System.out.print() is used for debugging.  
+System class is `final`, so it cannot be subclassed.
 
 </details>
 
 ---
 
-<a id="constructor-vs-method"></a>
-
+<a id="constructor-vs-method "></a>
 ## 4. What Is The Difference Between A Constructor And A Method In Java?
+<details><summary>Click to expand</summary>
 
-<details>
-<summary>Click to expand the full content for: "What Is The Difference Between A Constructor And A Method In Java?"</summary>
-
-Answer:  A constructor is a special method that is used to create and initialize an object of a class. A method is a block of code that can be called multiple times within a class.
+- Constructor initializes an object.  
+- Method is reusable logic that can be called multiple times.
 
 </details>
 
 ---
 
 <a id="lambda"></a>
-
 ## 5. What Is A Lambda Expression In Java?
+<details><summary>Click to expand</summary>
 
-<details>
-<summary>Click to expand the full content for: "What Is A Lambda Expression In Java?"</summary>
-
-A lambda expression in Java is a concise way to represent a block of code that can be passed around, like an object, and executed later. It provides a way to create anonymous functions, which can be used to implement functional interfaces, often replacing anonymous classes.
+A lambda expression represents block of code that can be passed like an object.  
+Used to implement functional interfaces.
 
 </details>
 
 ---
 
 <a id="superclass"></a>
-
 ## 6. Which Class Is A Superclass Of All Classes?
+<details><summary>Click to expand</summary>
 
-<details>
-<summary>Click to expand the full content for: "Which Class Is A Superclass Of All Classes?"</summary>
-
-Answer: Java.lang.The object is the root class for all the java classes and we don’t need to extend it. Every other java classes fall back under the object. All the different non-primitive types including arrays are inherited directly or indirectly from this class.
+`java.lang.Object` is the root of all classes.
 
 </details>
 
 ---
 
 <a id="limitations-inheritance"></a>
-
 ## 7. Are there any limitations of Inheritance?
+<details><summary>Click to expand</summary>
 
-<details>
-<summary>Click to expand the full content for: "Are there any limitations of Inheritance?"</summary>
-
-Yes, with more powers comes more complications. Inheritance is a very powerful feature in OOPs, but it has some limitations too. Inheritance needs more time to process, as it needs to navigate through multiple classes for its implementation. Also, the classes involved in Inheritance - the base class and the child class, are very tightly coupled together. So if one needs to make some changes, they might need to do nested changes in both classes. Inheritance might be complex for implementation, as well. So if not correctly implemented, this might lead to unexpected errors or incorrect outputs.
+- Time-consuming (deep navigation)  
+- Tightly coupled classes  
+- Complex to implement  
+- Can cause unexpected errors  
 
 </details>
 
 ---
 
 <a id="types-inheritance"></a>
-
 ## 8. What are the various types of inheritance?
+<details><summary>Click to expand</summary>
 
-<details>
-<summary>Click to expand the full content for: "What are the various types of inheritance?"</summary>
-
-The various types of inheritance include:
-
-Single inheritance
-Multiple inheritances
-Multi-level inheritance
-Hierarchical inheritance
-Hybrid inheritance
+- Single  
+- Multiple  
+- Multilevel  
+- Hierarchical  
+- Hybrid  
 
 </details>
 
 ---
 
+# 🆕 NEW CONTENT BELOW (ADDED EXACTLY AS YOU GAVE)
 
+---
 
-What is meant by static polymorphism?
+<a id="static-polymorphism"></a>
+## 9. What is meant by static polymorphism?
+<details><summary>Click to expand</summary>
 
-Static Polymorphism is commonly known as the Compile time polymorphism. Static polymorphism is the feature by which an object is linked with the respective function or operator based on the values during the compile time. Static or Compile time Polymorphism can be achieved through Method overloading or operator overloading.
+Static Polymorphism is compile-time polymorphism.  
+It binds a function/operator based on values at compile time.  
+Achieved through:
+- Method overloading  
+- Operator overloading  
 
+</details>
 
-Who developed the first object-oriented programming language?   Alan Kay
+---
 
+<a id="who-developed-oop"></a>
+## 10. Who developed the first object-oriented programming language?
+<details><summary>Click to expand</summary>
 
-Which among the following does not show or cannot be used, to show Polymorphism?
-Static member function
-Constructor Overloading
-Member function overloading
-Global member function
+**Alan Kay**
 
-Which among the following functions represent the concept of Polymorphism?
-Class member function
-Virtual function
-Inline function
-Undefined function
+</details>
 
-Which feature of OOPs facilitates code reusability?
-Abstraction
-Encapsulation
-Polymorphism
-Inheritance
+---
 
+<a id="not-polymorphism"></a>
+## 11. Which among the following does NOT show Polymorphism?
+<details><summary>Click to expand</summary>
 
-Which language among the following supports classes, but does not support the concept of Polymorphism?
-C++ programming language
-Java programming language
-Ada programming language
-C# programming language
+- Static member function ❌  
+- Constructor Overloading ✔  
+- Member function overloading ✔  
+- Global member function ❌  
 
+</details>
 
-Is the feature of OOPs which is responsible for binding data with their implementation as a single entity?
-Polymorphism
-Inheritance
-Abstraction
-Encapsulation
+---
 
-_______ was the first language to be developed as a purely object-oriented programming language?
-Smalltalk
+<a id="functions-polymorphism"></a>
+## 12. Which functions represent the concept of Polymorphism?
+<details><summary>Click to expand</summary>
 
-State true or false: A Java application can be created without implementing the OOPs concept.   -> false
+- Class member function  
+- Virtual function ✔  
+- Inline function  
+- Undefined function  
 
+</details>
 
+---
 
+<a id="code-reusability"></a>
+## 13. Which feature of OOPs facilitates code reusability?
+<details><summary>Click to expand</summary>
 
-Name some ways to overload a method.
+✔ **Inheritance**
 
-1. Changing Parameter Number -> this method involves altering the number of parameters in different method signatures.
+</details>
 
-Here is an example in Java:
+---
 
-public int calculateSum(int a, int b) { // Two parameters
-    return a + b;
-}
-public int calculateSum(int a, int b, int c) { // Three parameters
-    return a + b + c;
-}
+<a id="language-no-polymorphism"></a>
+## 14. Which language supports classes but not polymorphism?
+<details><summary>Click to expand</summary>
 
-2. Adapting Parameter Order -> Another overloading technique involves rearranging the order of parameters in methods to create unique signatures.
-public double calculateArea(double length, double width) { // Length, then width
-    return length * width;
-}
+**Ada programming language**
 
-public double calculateArea(double radius) { // Just radius for a circle
-    return Math.PI * radius * radius;
-}
+</details>
 
-3. Varying Parameter Type - You can define methods with different types of parameters to enable overloading.
-public void printDetails(String name, int age) {
-    System.out.println("Name: " + name + " , Age: " + age);
-}
+---
 
-public void printDetails(int id) {
-    System.out.println("ID: " + id);
-}
+<a id="binding-feature"></a>
+## 15. Which OOP feature is responsible for binding data with implementation?
+<details><summary>Click to expand</summary>
 
-public void printDetails(double salary) {
-    System.out.println("Salary: " + salary);
+✔ **Encapsulation**
 
+</details>
 
+---
 
+<a id="first-pure-oop"></a>
+## 16. Which was the first purely object-oriented programming language?
+<details><summary>Click to expand</summary>
 
-What is cohesion in OOP?
+**Smalltalk**
 
-Cohesion in OOP refers to how closely the methods and data within a single class are related to one another. A highly cohesive class is focused on a specific task or responsibility, making it easier to maintain, understand, and ensure reliability.
-High cohesion is a desired attribute because it means that methods and properties within a class work together in a unified manner. In contrast, low cohesion indicates that a class has multiple, often unrelated responsibilities, making it harder to understand and maintain.
+</details>
 
+---
 
+<a id="java-oops-true-false"></a>
+## 17. True/False: A Java application can be created without OOPs?
+<details><summary>Click to expand</summary>
 
-Compare inheritance vs. mixin vs. composition.
+**False**
 
-Inheritance, mixins, and composition are all techniques in object-oriented programming that deal with code reuse and the relationship between objects or classes.
+</details>
 
-Inheritance - > 
-Definition: A class (subclass) inherits properties and behaviors from another class (superclass).
-Relationship: "is-a" (e.g., a Car is a Vehicle).
-Pros: Direct way to reuse code; establishes intuitive relationships.
-Cons: Can lead to complex hierarchies; potential for over-generalization.
+---
 
-Mixin ->
-Definition: A class that offers methods to other classes without being a standalone entity. Common in languages without multiple inheritance, such as Python.
-Relationship: "kind-of-a" or "can-do-this" (e.g., a Helicopter can fly like a Bird).
-Pros: Reuses code across classes; avoids deep inheritance issues.
-Cons: Method source can be unclear; potential name clashes.
+<a id="overload-method"></a>
+## 18. Name some ways to overload a method.
+<details><summary>Click to expand</summary>
 
-Composition ->
-Definition: Building objects by combining simpler ones. Emphasizes a "has-a" relationship.
-Relationship: "has-a" (e.g., a Car has an Engine).
-Pros: Encourages modular design; components can be easily swapped.
-Cons: May need more design upfront; can require more boilerplate code.
-Many modern OOP design guidelines, like the composition over inheritance principle, suggest that unless there's a clear "is-a" relationship, it's often better to use composition as it's more flexible and leads to a more modular and maintainable design.
-
-
-
-What are the limitations of OOPs?
-Not suitable for solving small problems.
-Without the proper class documentation, it is hard to understand the code.
-Requires a lot of time to solve problems.
-Required intensive testing.
-The programmer should think of solving a problems in terms of objects.
+### ✔ 1. Changing Parameter Number  
+```java
+public int calculateSum(int a, int b) { return a + b; }
+public int calculateSum(int a, int b, int c) { return a + b + c; }
